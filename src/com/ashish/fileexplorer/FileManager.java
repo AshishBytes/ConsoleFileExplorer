@@ -44,10 +44,10 @@ public static String navigateToDirectory(String currentDirectory, String directo
         if (newDir.exists() && newDir.isDirectory()) {
             currentDirectory = newDir.getAbsolutePath();
             System.out.println("Navigated to: " + currentDirectory);
-            listFilesAndDirectories(currentDirectory); // Display directory listing
+            listFilesAndDirectories(currentDirectory);
         } else {
             System.out.println("Directory not found.");
-            return currentDirectory; // Return current directory without changing it
+            return currentDirectory;
         }
     }
 
