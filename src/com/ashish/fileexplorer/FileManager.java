@@ -34,7 +34,7 @@ public static String navigateToDirectory(String currentDirectory, String directo
         if (parentDir != null) {
             currentDirectory = parentDir.getAbsolutePath();
             System.out.println("Navigated to parent directory: " + currentDirectory);
-            listFilesAndDirectories(currentDirectory); // Display directory listing
+            listFilesAndDirectories(currentDirectory);
         } else {
             System.out.println("Already at root directory.");
         }
